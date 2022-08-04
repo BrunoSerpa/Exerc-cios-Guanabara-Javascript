@@ -1,0 +1,45 @@
+<html lang="pt-br">
+    <head>
+        <title>Parte 4</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Designer.css" type="text/css">
+    </head>
+    <body>
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+                <li><img src="Img/Logo.gif" class="Logo"/></li>
+                <li><a href='index.html'>Modelo</a></li>
+                <li><a href='Parte2.html'>Hora do Dia</a></li>
+                <li><a href='Parte3.html'>Verificador de idade</a></li>
+                <li><a href='Parte4_1.html'>Sequencia Numérica</a></li>
+                <li><a href='Parte4_2.html'>Tabuada</a></li>
+            </ul>
+        </nav>
+        <header>
+            <p>Tabuada</p>
+        </header>
+        <section>
+            <div class="TextoTipo1">
+                <p>Digite o número que deseja saber a tabuada:<br/>
+                    <input type="number" name="Number" id="Number">
+                </p>
+                <p>Multiplicado até quantas vezes? <br/>
+                    <input type="number" name="Sequence" id="Sequence" min="1">
+                </p>
+                <p>
+                    <input  class="Botao"  type="button" value="Calcular" onclick="Calcular()">
+                </p>
+            </div>
+            <div>
+                <select name="tabuada" id="Res" class="TextoTipo2"></select>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; Bruno Serpa 3°DS</p>
+        </footer>
+        <script src="ScriptParte4_2.js"></script>
+    </body>
+</html>
