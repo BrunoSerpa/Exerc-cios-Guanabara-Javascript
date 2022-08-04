@@ -9,22 +9,11 @@ function Calcular(){
         Res.innerHTML = 'Contando:'
         let i = Number(NumI.value)
         let f = Number(NumF.value)
-        let u = Number(Jump.value)
-        if(f>i && u<0 || f<i && u>0){
-            window.alert('Digite números válidos!')
+        let u = Math.abs(Number(Jump.value))
+        for(let c = i; (i<f ? c<=f: c>=f); (i<f ? c+=u: c-=u)) {
+            Res.innerHTML += `${c}; `
         }
-        else{
-            if (i < f) {
-            for(let c = i; c <= f; c+= u) {
-                Res.innerHTML += `${c}; `
-                }
-            } else {
-                for(let c = i; c > f; c -= u) {
-                    Res.innerHTML += `${c};`
-                }
-            }
-            Res.innerHTML += `\u{1F3C1}`
-        }
+        Res.innerHTML += `\u{1F3C1}`
     }
 }
 /* Parte navbar do site abaixo               ||
